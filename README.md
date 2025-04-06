@@ -12,6 +12,10 @@ Der **Menu-Manager** ist eine Python-Anwendung zur Verwaltung von Speisekarten. 
 - **Speisekarte speichern**: Speichert die Speisekarte in einer Textdatei.
 - **Speisekarte laden**: Lädt eine zuvor gespeicherte Speisekarte aus einer Textdatei.
 
+## UML
+
+![](images/UML.png)
+
 ## Verzeichnisstruktur
 Die Anwendung ist in mehrere Module unterteilt, die in einem klar strukturierten Verzeichnisbaum organisiert sind:
 
@@ -34,7 +38,7 @@ Menu-Manager/
 
 1. Klone das Repository oder lade den Code herunter:
    ```bash
-   git clone https://github.com/DEIN_USERNAME/Menu-Manager.git
+   git clone https://github.com/MauriceLe/Menu-Manager.git
    ```
 
 2. Stelle sicher, dass Python 3.x installiert ist. Überprüfe dies mit:
@@ -110,24 +114,3 @@ Speisekarte wurde aktualisiert.
 
 - **Speisekarte speichern**: Am Ende jeder Sitzung kannst du das Menü unter einem benutzerdefinierten Namen speichern oder die Standarddatei `Speisekarte.txt` verwenden.
 - **Speisekarte laden**: Beim Starten des Programms wird automatisch die Datei `Speisekarte.txt` geladen, falls sie existiert.
-
-## Code-Erklärung
-
-### `main.py`
-Die Datei `main.py` ist der Einstiegspunkt der Anwendung und enthält die Benutzeroberfläche. Es ermöglicht dem Benutzer, die Speisekartenverwaltung interaktiv zu steuern, indem es Optionen wie das Hinzufügen, Entfernen und Ändern von Gerichten bietet.
-
-### `Menu.py`
-Die `Menu`-Klasse verwaltet die gesamte Speisekarte. Sie enthält Methoden zum Anzeigen des Menüs, Hinzufügen und Entfernen von Gerichten sowie das Laden und Speichern von Daten in Textdateien. Sie organisiert die Kategorien und speichert sie als Instanzobjekte.
-
-### `Category.py`
-Die `Category`-Klasse stellt eine Kategorie auf der Speisekarte dar (z. B. Vorspeisen, Hauptgerichte). Sie ermöglicht das Hinzufügen, Entfernen und Abrufen von Gerichten in der Kategorie.
-
-### `Food.py`
-Die `Food`-Klasse repräsentiert ein Gericht mit einem Namen und einem Preis. Sie enthält Methoden zum Abrufen des Namens und Preises sowie zur Darstellung des Gerichts als String.
-
-## Mitwirkende
-- **Projektleitung**: [Dein Name]
-- **Mitwirkende**: [Liste von Mitwirkenden, falls vorhanden]
-
-## Lizenz
-Dieses Projekt ist unter der MIT-Lizenz lizenziert – siehe [LICENSE.md](LICENSE.md) für Details.
